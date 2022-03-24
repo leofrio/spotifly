@@ -1,0 +1,27 @@
+.mains{  
+    height:20vh;
+    background-image: url('/images/plights.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    align-items: center; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    color: white; 
+}  
+.mains > h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.searcharea { 
+    flex-direction: row;   
+    margin-bottom: auto; 
+    width: 40%; 
+    height: 20%;
+} 
+.searcharea > button {  
+    background-image: url('/images/search.png');
+    width: 15px;
+    height: 15px; 
+    background-size: cover;
+} 
