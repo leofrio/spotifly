@@ -25,28 +25,31 @@ export default function PlaylistPage(props) {
   const [playlists,setPlaylists] = useState([]);
 
   useEffect( () => {
-    axios.get("http://localhost:5000/playlistsDefault").then((res) => setPlaylists = res.data)
+    axios.get("http://localhost:5000/playlistsDefault").then((res) => setPlaylists(res.data))
   }, [])
 
-  const res = playlists.map((o) => {
-   
-       <Link to = {`/playlistdetail/${o.id}`} >
-          <img  src={`./images/${o.capa}`} ></img>
-      </Link>
-    
-  })
 
+
+
+  
   return (
       <> 
         <div className="sb">
         </div>
         <div className="playMenu">
-          {res}
+          {playlists.map((o) => (
+   
+   <Link to = {`/playlistdetail/${o.id}`} >
+      <img  src={`./images/${o.capa}`} ></img>
+  </Link>)
+          )}
+
         </div>
       </>
   );
-}
 
+          
+}
 
 
 
@@ -107,14 +110,3 @@ export default function PlaylistPage(props) {
 } 
 }
  */
-
-
-
-
-
-
-
-
-
-
-  
