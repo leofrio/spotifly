@@ -1,19 +1,20 @@
 import React from 'react';
-import '../App.css'; 
-import './searcher.css'; 
+import '../App.css';
+import './searcher.css';
 
-function Searcher() { 
-    return ( 
+function Searcher() {
+    return (
         <>
-            <div className='mains'>  
-                <h1>Como podemos ajudar?</h1> 
-                <div className='searcharea'> 
-                    <input type="text" placeholder='Pesquise uma duvida'></input> 
-                    <button></button>
+            <div className='mains'>
+                <h3>Como podemos ajudar?</h3>
+                <div className='searcharea'>
+                    <form id="search">
+                        <input type='text' id='searchText' placeholder='Qual a sua dúvida?'/>
+                    </form>
                 </div>
-            </div>    
+            </div>
         </>
     )
-} 
+}
 
 export default Searcher;

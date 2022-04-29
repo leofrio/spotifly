@@ -1,5 +1,5 @@
 .Cabecalho {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background-color: #0E0E0E;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -73,6 +73,10 @@
 
 .menu-icon {
   display: none;
+} 
+
+li {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {

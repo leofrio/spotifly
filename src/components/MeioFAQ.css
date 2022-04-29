@@ -1,9 +1,27 @@
-.main { 
-    height:100vh;
-    text-align: center; 
-    padding:10px; 
-    color: white; 
+.main {
+
+    text-align: center;
+    padding-left:300px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+    color: white;
 }
-.thewhole { 
-    background-color: rgb(28, 27, 27);
+.thewhole {
+    background-color: #fff;
+}
+
+h8 {
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+
+h9 {
+    display: block;
+    text-align: left;
+    color: #000;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, serif;
 }

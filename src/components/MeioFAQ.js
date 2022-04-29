@@ -6,26 +6,47 @@ import Faq from "react-faq-component";
 
 
 const data = {
-    title: "Perguntas Frequentes", 
+
     rows: [
         {
-            title: "Meu dispositivo não está conectando oque fazer?",
-            content: "se estiver dando certo em outros dispositivos, tente ver se a verão do seu aparelho é suportada pelo spotifly",
+            title: <h8>Ajuda com pagamentos</h8>,
+            content: <h9>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue magna, convallis quis eros id, luctus ullamcorper neque. Vivamus ut diam erat. Duis viverra ut mauris vitae vulputate. Fusce malesuada mi in suscipit lobortis. Maecenas vestibulum libero a placerat congue. Fusce eget lobortis purus. Curabitur nec iaculis justo, in dictum odio. Quisque tincidunt, lacus vitae rutrum hendrerit, lacus lorem laoreet leo, eget ornare libero urna id augue.,
+            </h9>
         },
         {
-            title: "Não lembro da senha, oque Fazer?",
-            content:
-                "Temos uma sessão de recuperar a senha",
+            title: <h8>Ajuda com o plano</h8>,
+            content: <h9>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue magna, convallis quis eros id, luctus ullamcorper neque. Vivamus ut diam erat. Duis viverra ut mauris vitae vulputate. Fusce malesuada mi in suscipit lobortis. Maecenas vestibulum libero a placerat congue. Fusce eget lobortis purus. Curabitur nec iaculis justo, in dictum odio. Quisque tincidunt, lacus vitae rutrum hendrerit, lacus lorem laoreet leo, eget ornare libero urna id augue.,
+            </h9>
         },
         {
-            title: "musicas estão com pessima qualidade e minha internet esta boa",
-            content: `verifique se o site não esta em manutenção ou se é algum problema do seu aparelho`,
+            title: <h8>Ajuda com o app</h8>,
+            content: <h9>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue magna, convallis quis eros id, luctus ullamcorper neque. Vivamus ut diam erat. Duis viverra ut mauris vitae vulputate. Fusce malesuada mi in suscipit lobortis. Maecenas vestibulum libero a placerat congue. Fusce eget lobortis purus. Curabitur nec iaculis justo, in dictum odio. Quisque tincidunt, lacus vitae rutrum hendrerit, lacus lorem laoreet leo, eget ornare libero urna id augue.,
+            </h9>
         },
         {
-            title: "Porque escolher spotifly?",
-            content: <p>spotifly é amor, spotifly é vida</p>,
+            title: <h8>Ajuda com dispositivos</h8>,
+            content: <h9>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue magna, convallis quis eros id, luctus ullamcorper neque. Vivamus ut diam erat. Duis viverra ut mauris vitae vulputate. Fusce malesuada mi in suscipit lobortis. Maecenas vestibulum libero a placerat congue. Fusce eget lobortis purus. Curabitur nec iaculis justo, in dictum odio. Quisque tincidunt, lacus vitae rutrum hendrerit, lacus lorem laoreet leo, eget ornare libero urna id augue.,
+            </h9>
         },
+        {
+            title: <h8>Privacidade e Dados</h8>,
+            content: <h9>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue magna, convallis quis eros id, luctus ullamcorper neque. Vivamus ut diam erat. Duis viverra ut mauris vitae vulputate. Fusce malesuada mi in suscipit lobortis. Maecenas vestibulum libero a placerat congue. Fusce eget lobortis purus. Curabitur nec iaculis justo, in dictum odio. Quisque tincidunt, lacus vitae rutrum hendrerit, lacus lorem laoreet leo, eget ornare libero urna id augue.,
+            </h9>
+        },
+        {
+            title: <h8>Ajuda com a conta</h8>,
+            content: <h9>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue magna, convallis quis eros id, luctus ullamcorper neque. Vivamus ut diam erat. Duis viverra ut mauris vitae vulputate. Fusce malesuada mi in suscipit lobortis. Maecenas vestibulum libero a placerat congue. Fusce eget lobortis purus. Curabitur nec iaculis justo, in dictum odio. Quisque tincidunt, lacus vitae rutrum hendrerit, lacus lorem laoreet leo, eget ornare libero urna id augue.,
+            </h9>
+        },
+
     ],
+
 };
 
 const styles = {
@@ -34,29 +55,27 @@ const styles = {
     rowTitleColor: "white",
     // rowContentColor: 'grey',
     // arrowColor: "red",
-    bgColor: "#1C1B1B"
+    bgColor: "#FFF"
 }
 
 const config = {
-     animate: true,
-     //arrowIcon: "V", 
-     tabFocus: true
+    animate: true,
+    //arrowIcon: "V",
+    tabFocus: true
 };
 
 export default function App() {
 
-    return ( 
+    return (
         <div className='thewhole'>
-            <div className="main">  
-            <h1>Como Podemos Ajudar?</h1> 
-            <sub><p>A Equipe tecnica do Spotifly sempre está a disposição para voce, mas antes dê uma olhada nas nossas 
-                Questões Mais Frequentes </p></sub>
+            <div className="main">
+
                 <Faq
                     data={data}
                     styles={styles}
                     config={config}
                 />
-            </div> 
+            </div>
         </div>
     );
 }

@@ -2,15 +2,15 @@ import React from 'react';
 import '../../App.css';
 
 import Meio from '../Meio';
-import Rodape from '../Rodape';
 
-function Home() {
+function Home(props) {
+
+  //props.setEstaLogado(false); 
   return (
     <>
-      <Meio/>
-      <Rodape />
+      <Meio isLogged={props.isLogged}/>
     </>
-  );
+  ); 
 }
 
 export default Home;

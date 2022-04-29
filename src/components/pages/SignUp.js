@@ -1,12 +1,11 @@
 import React from 'react';
-import '../../App.css';
-import Rodape from '../Rodape';
+import '../../App.css';  
+import SignUpMiddle from '../SignUpMiddle';
 
 export default function SignUp() {
   return (
-    <>
-  <h1 className='sign-up'> Cadastro</h1>;
-  <Rodape/>
+  <>
+    <SignUpMiddle />
   </>
   )
 }
