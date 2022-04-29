@@ -20,8 +20,6 @@ export default function PlaylistPage(props) {
   const [currentUser,setCurrentUser]=useState({}) 
 
 
-
-
   const [playlists,setPlaylists] = useState([]);
 
   useEffect( () => {
@@ -30,8 +28,22 @@ export default function PlaylistPage(props) {
 
 
 
+  if(isLogged) {   
+    axios.get("http://localhost:5000/currentUser").then( (res) => {
+            setCurrentUser(res.data)
+        }
+    )
 
+    axios.get("http://localhost:5000/playlistUser")
   
+
+    return( 
+      <>
+      <h1 style={{color:"black"}}>Bem vindo a suas playlists {currentUser.name}</h1>
+      </>
+    )
+  } else{
+
   return (
       <> 
         <div className="sb">
@@ -46,67 +58,9 @@ export default function PlaylistPage(props) {
 
         </div>
       </>
-  );
+  );       
+}
 
-          
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* if(isLogged) {   
-    axios.get("http://localhost:5000/currentUser").then( (res) => {
-            setCurrentUser(res.data)
-        }
-    )
-
-    axios.get("http://localhost:5000/playlistUser")
-  
-
-    return( 
-      <>
-      <h1 style={{color:"black"}}>Bem vindo a suas playlists {currentUser.name}</h1>
-      </>
-    )
-  } 
-
-
-
-  else {
-
-    const [playlists,setPlaylists] = useState([]);
-
-    useEffect( () => {
-      axios.get("http://localhost:5000/playlistDefault").then((res) => setPlaylists = res.data)
-    }, [])
-
-    const res = playlists.map((playlist) => {
-      return( <Link to = {`/playlistdetail/${playlist.id}`} key = {playlist.id} >
-            <img  src={`./images/${playlist.capa}`} ></img>
-        </Link>
-      )
-    })
-
-    return (
-        <> 
-          <div className="sb">
-          </div>
-          <div className="playMenu">
-            {res}
-          </div>
-        </>
-    );
-} 
-}
- */
