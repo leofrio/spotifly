@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 //import Playlists from "../Data/PlaylistsData"; 
 import '../playlists.css'
 import axios from 'axios';
-
+import Modal from '../Modal'
 
 export default function PlaylistPage(props) { 
 
@@ -40,6 +40,7 @@ export default function PlaylistPage(props) {
     return( 
       <>
       <h1 style={{color:"black"}}>Bem vindo a suas playlists {currentUser.name}</h1>
+      <Modal/>
       </>
     )
   } else{
