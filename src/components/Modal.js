@@ -1,6 +1,7 @@
 import React, { useState , useEffect} from "react";
 import "./Modal.css";
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom'
 
 export default function Modal() {
 
@@ -20,12 +21,15 @@ export default function Modal() {
     document.body.classList.remove('active-modal')
   }
 
-
+const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
     const playlistsUser = {listName}
-    axios.put(`http://localhost:5000/playlistsUser`, playlistsUser);
+    axios.post(`http://localhost:5000/playlistsUser`, playlistsUser)
+        .then((response) =>{
+            navigate.push('/');
+        });
     toggleModal();
 }
 
