@@ -205,6 +205,13 @@
     }
   ],
   "playlistsUser": [
-    {}
+    {
+      "listName": "dsaasdasdasdsa",
+      "id": 2
+    },
+    {
+      "listName": "muito foda",
+      "id": 3
+    }
   ]
 }
