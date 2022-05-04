@@ -43,9 +43,8 @@ export default function PlaylistPage(props) {
           )
         } 
         else {  
-          currentPlaylists=currentUser.playlists;
 
-          const valor = currentPlaylists.map((o) => {
+          currentPlaylists = currentUser.playlists.map((o) => {
             return (
               <Link to = {`/playlistdetail/${o.id}`} >
                 <img  src={`./images/${o.capa}`} ></img>
@@ -57,7 +56,7 @@ export default function PlaylistPage(props) {
               <>
               <h1 style={{color:"black"}}>Bem vindo a suas playlists {currentUser.name}</h1>
               <div className="playMenu">
-                  { valor   }
+                  { currentPlaylists   }
                 </div>
               <Modal/>
               </>
