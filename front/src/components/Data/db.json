@@ -1,0 +1,393 @@
+{
+  "users": [
+    
+  ],
+  "playlists": [
+    {
+      "name": "Ultimate Hard Rock/Metal Mix",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "capa": "metal.png",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Metal is The Law",
+          "song": "metalisthelaw.mp3",
+          "artist": "Massacration",
+          "album": "Gates of Metal Fried Chicken of Death",
+          "dataAdicao": "Há 4 dias",
+          "capa": "metal.png"
+        },
+        {
+          "title": "For Whom the Bell Tolls",
+          "song": "forwhomthebelltolls.mp3",
+          "artist": "Metallica",
+          "album": "Ride The Lightning",
+          "dataAdicao": "Há 4 dias",
+          "capa": "metal.png"
+        }
+      ],
+      "id": 0
+    },
+    {
+      "name": "Alternativo",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "capa": "alternative.png",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Do I Wanna Know",
+          "song": "articmonkeys.mp3"
+        },
+        {
+          "title": "Feel Good Inc",
+          "song": "feelgood.mp3"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Pop Nacional",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "capa": "pop_nacional.png",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Meu Erro",
+          "song": "meuerro.mp3"
+        },
+        {
+          "title": "Tempos Modernos",
+          "song": "tempos_modernos.mp3"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Anime Hits",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "capa": "anime.png",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "We Are!",
+          "song": "weare.mp3",
+          "artist": "One Piece",
+          "album": "Soundtrack",
+          "dataAdicao": "Há 4 dias"
+        },
+        {
+          "title": "GO!",
+          "song": "flowgo.mp3",
+          "artist": "Naruto",
+          "album": "Soundtrack",
+          "dataAdicao": "Há 2 dias"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "O Melhor da Música Alemã",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "capa": "german.png",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Bibi Hendl",
+          "song": "bibihendl.mp3"
+        },
+        {
+          "title": "Auf und Auf Voll Lebenslust",
+          "song": "aufundaufvolllebenslut.mp3"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Gospel",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "capa": "gospel.png",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Old Landmark",
+          "song": "oldlandmark.mp3"
+        },
+        {
+          "title": "Amazing Grace",
+          "song": "amazinggrace.mp3"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Country",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "capa": "country.png",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Rawhide",
+          "song": "rawhide.mp3"
+        },
+        {
+          "title": "The Gambler",
+          "song": "thegambler.mp3"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Sertanejo",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum mauris neque, in pellentesque ex tempus in. Maecenas hendrerit vitae risus a blandit.",
+      "autor": "Spotifly",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "capa": "sertanejo.png",
+      "userId": -1,
+      "musicas": [
+        {
+          "title": "Evidencias",
+          "song": "evidencias.mp3"
+        },
+        {
+          "title": "Desça Dai Seu Corno",
+          "song": "descadaicorno.mp3"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "musicas": [
+        {
+          "id": 9,
+          "artist": "German",
+          "title": "Bibi Hendl",
+          "song": "bibihendl.mp3"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "h",
+      "capa": "blankPlaylist.png",
+      "descricao": "a",
+      "autor": "undefined",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "musicas": [],
+      "userId": "undefined",
+      "id": 9
+    },
+    {
+      "musicas": [
+        {
+          "id": 8,
+          "artist": "German",
+          "title": "Auf und Auf Voll Lebenslust",
+          "song": "aufundaufvolllebenslut.mp3"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "musicas": [
+        {
+          "id": 1,
+          "artist": "Metallica",
+          "title": "For Whom the Bell Toll",
+          "song": "forwhomthebelltolls.mp3"
+        },
+        {
+          "id": 2,
+          "artist": "Artic Monkeys",
+          "title": "Do I Wanna Know",
+          "song": "metalisthelaw.mp3"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "name": "AAA",
+      "capa": "blankPlaylist.png",
+      "descricao": "a",
+      "autor": "one",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "userId": "2",
+      "musicas": [],
+      "id": 12
+    },
+    {
+      "name": "ttt",
+      "capa": "blankPlaylist.png",
+      "descricao": "a",
+      "autor": "one",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "userId": "2",
+      "musicas": [],
+      "id": 13
+    },
+    {
+      "name": "yyy",
+      "capa": "blankPlaylist.png",
+      "descricao": "a",
+      "autor": "one",
+      "quantidadeFaixas": "2 faixas",
+      "quantidadeCurtidas": "2.450 curtidas",
+      "userId": "2",
+      "musicas": [
+        {
+          "id": 0,
+          "artist": "Massacration",
+          "title": "Metal is The Law",
+          "song": "metalisthelaw.mp3"
+        },
+        {
+          "id": 2,
+          "artist": "Artic Monkeys",
+          "title": "Do I Wanna Know",
+          "song": "metalisthelaw.mp3"
+        },
+        {
+          "id": 12,
+          "artist": "Nenho",
+          "title": "Desça Dai Seu Corno",
+          "song": "descadaicorno.mp3"
+        },
+        {
+          "id": 11,
+          "artist": "James Brown",
+          "title": "Old Landmark",
+          "song": "oldlandmark.mp3"
+        },
+        {
+          "id": 15,
+          "artist": "Kenny Rogers",
+          "title": "The Gambler",
+          "song": "thegambler.mp3"
+        }
+      ],
+      "id": 14
+    }
+  ],
+  "musicas": [
+    {
+      "id": 0,
+      "artist": "Massacration",
+      "title": "Metal is The Law",
+      "song": "metalisthelaw.mp3"
+    },
+    {
+      "id": 1,
+      "artist": "Metallica",
+      "title": "For Whom the Bell Toll",
+      "song": "forwhomthebelltolls.mp3"
+    },
+    {
+      "id": 2,
+      "artist": "Artic Monkeys",
+      "title": "Do I Wanna Know",
+      "song": "metalisthelaw.mp3"
+    },
+    {
+      "id": 3,
+      "artist": "Gorillaz",
+      "title": "Feel Good Inc",
+      "song": "feelgood.mp3"
+    },
+    {
+      "id": 4,
+      "artist": "Paralamas do sucesso",
+      "title": "Meu erro",
+      "song": "meuerro.mp3"
+    },
+    {
+      "id": 5,
+      "artist": "Lulu Santos",
+      "title": "Tempos Modernos",
+      "song": "tempos_modernos.mp3"
+    },
+    {
+      "id": 6,
+      "artist": "One Piece",
+      "title": "We Are!",
+      "song": "weare.mp3"
+    },
+    {
+      "id": 7,
+      "artist": "Naruto",
+      "title": "GO!",
+      "song": "flowgo.mp3"
+    },
+    {
+      "id": 8,
+      "artist": "German",
+      "title": "Auf und Auf Voll Lebenslust",
+      "song": "aufundaufvolllebenslut.mp3"
+    },
+    {
+      "id": 9,
+      "artist": "German",
+      "title": "Bibi Hendl",
+      "song": "bibihendl.mp3"
+    },
+    {
+      "id": 10,
+      "artist": "John Newton",
+      "title": "Amazing Grace",
+      "song": "amazinggrace.mp3"
+    },
+    {
+      "id": 11,
+      "artist": "James Brown",
+      "title": "Old Landmark",
+      "song": "oldlandmark.mp3"
+    },
+    {
+      "id": 12,
+      "artist": "Nenho",
+      "title": "Desça Dai Seu Corno",
+      "song": "descadaicorno.mp3"
+    },
+    {
+      "id": 13,
+      "artist": "Chitãozinho e Xororó",
+      "title": "Evidencias",
+      "song": "evidencias.mp3"
+    },
+    {
+      "id": 14,
+      "artist": "Frankie Line",
+      "title": "Rawhide",
+      "song": "rawhide.mp3"
+    },
+    {
+      "id": 15,
+      "artist": "Kenny Rogers",
+      "title": "The Gambler",
+      "song": "thegambler.mp3"
+    }
+  ]
+}

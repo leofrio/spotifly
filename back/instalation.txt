@@ -1,0 +1,12 @@
+npm init 
+npm install express 
+npm install nodemon  
+
+node src/index.js   
+ctrl + c 
+nodemon src/index.js   
+
+\ few links that helped 
+https://github.com/bezkoder/node-express-mongodb/blob/master/app/controllers/tutorial.controller.js 
+https://javascript.plainenglish.io/full-stack-mongodb-react-node-js-express-js-in-one-simple-app-6cc8ed6de274
+https://www.freecodecamp.org/news/deploying-a-mern-application-using-mongodb-atlas-to-heroku/

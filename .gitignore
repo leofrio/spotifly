@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+node_modules
+=======
+back/node_modules/ 
+front/node_modules/
+>>>>>>> 6d41f37 (delivered version)
+=======
+node_modules
+>>>>>>> 3e96dde3de6809fc91ed86ce12d66f97123370d7
