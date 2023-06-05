@@ -2,9 +2,9 @@ npm init
 npm install express 
 npm install nodemon  
 
-node src/index.js   
+node src/server.js   
 ctrl + c 
-nodemon src/index.js   
+nodemon src/server.js   
 
 \ few links that helped 
 https://github.com/bezkoder/node-express-mongodb/blob/master/app/controllers/tutorial.controller.js 
