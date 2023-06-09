@@ -6,6 +6,7 @@
     padding-right: 100px;
     background-image: linear-gradient(#646464, #2c2c2c);
 }
+
 .sideArea {
     display: flex;
     flex-direction: row;
@@ -17,6 +18,25 @@
     background-image: linear-gradient(#000000, #858383);
 
 }
+
+.song-item {
+    display: flex;
+    align-items: center;
+}
+
+.song-item .button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    border: #0e0e0e;
+    background-color: transparent;
+}
+
+.song-item .song-title {
+    width: 100%;
+}
+
 .coluna {
     display: flex;
     flex-direction: column;
@@ -24,32 +44,36 @@
     padding-left: 10px;
     padding-right: 500px;
 }
+
 .linha {
     display: flex;
     flex-direction: row;
     padding-left: -20px;
 }
 
-.add { 
-    outline: none; 
+.add {
+    outline: none;
     text-decoration: none;
-}  
+}
 
-.add :hover { 
+.add :hover {
     color: red;
     background-color: black;
     text-decoration: underline;
 }
+
 li {
     margin: 5px;
     list-style-type: none;
 }
+
 img {
     width: 16%;
     height: 16%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 .fa {
     color: white !important;
 }
@@ -57,13 +81,14 @@ img {
 body {
     /*background: linear-gradient(to left, #7700aa, #8800ff);*/
     background-color: white;
-    text-align:center;
-    color:#fff;
+    text-align: center;
+    color: #fff;
 }
 
-h3{
-    text-shadow:1px 1px 1px #fff;
+h3 {
+    text-shadow: 1px 1px 1px #fff;
 }
+
 h1 {
     display: block;
     font-size: 70px;
@@ -71,6 +96,7 @@ h1 {
     padding-top: 20px;
     font-weight: bolder;
 }
+
 h5 {
     display: block;
     text-align: left;
@@ -80,6 +106,7 @@ h5 {
     font-weight: lighter;
     font-family: Arial, serif;
 }
+
 h4 {
     display: block;
     text-align: left;
@@ -100,6 +127,7 @@ h6 {
     font-weight: lighter;
     font-family: Arial, serif;
 }
+
 .button {
     width: 30px;
     height: 30px;

@@ -49,7 +49,6 @@ function AddSongs(props) {
         axios.put(`http://localhost:5000/playlists/${id}`, updatedPlaylist).then((res) => {
           setPlaylist(updatedPlaylist);
           setAddedSongs([...addedSongs, song]);
-          // Show an alert or notification here to indicate that the song was added
           alert(`Song "${song.title}" added to the playlist!`);
         });
       }
