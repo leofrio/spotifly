@@ -8,10 +8,15 @@ this is how to install this react project which i made with my friends at unifor
 - then type cd front
 - then type npm i
 - then type npm start
-- if that doesnt work the openssl version might be wrong, so you have to paste this in the 
+- if that doesnt work the openssl version might be wrong, so you have to paste this in the terminal
     - Linux or Mac: 
-    ```set NODE_OPTIONS=--openssl-legacy-provider``` 
-    - Windows:```set NODE_OPTIONS=--openssl-legacy-provider```
+    ```
+    export NODE_OPTIONS=--openssl-legacy-provider
+    ``` 
+    - Windows:
+    ```
+    set NODE_OPTIONS=--openssl-legacy-provider
+    ```
 ## back
 
 - open terminal
