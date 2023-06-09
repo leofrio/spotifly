@@ -1,51 +1,67 @@
-import React, { useEffect,useState } from "react"
-import './LoginMiddle.css' 
-import axios from "axios"
-import { useNavigate } from "react-router-dom" 
+import React, { useState } from "react";
+import './LoginMiddle.css';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-function LoginMiddle(props) { 
-    const [userList,setUserList]=useState()  
-    const email=React.createRef() 
-    const password=React.createRef() 
-    const navigate=useNavigate()   
-    
-    function handleSubmit(e) {
-        e.preventDefault();
+function LoginMiddle(props) {
+  const [userList, setUserList] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-        var currentEmail=email.current.value
-        var currentPassword=password.current.value  
+  function handleSubmit(e) {
+    e.preventDefault();
 
-        if(currentEmail == "" || currentPassword == "") { 
-            alert("porfavor tenha os dois campos inseridos") 
-        } 
-        else { 
-            axios.get("http://localhost:5000/users").then(
-            (res) => {
-                setUserList(res.data)
+    if (email === "" || password === "") {
+      alert("Por favor, preencha ambos os campos");
+    } else {
+      setLoading(true);
 
-                    //we use res.data cuz the setUserList doesnt work immediatly 
-                    res.data.forEach(o  => { 
-                        if(currentEmail == o.email && currentPassword== o.senha) {   
-                            console.log(props)
-                            props.setIsLogged(true) 
-                            props.setLoggedId(o._id)
-                            navigate("/")
-                        }
-                    })
-                
-            })
+      axios.get("http://localhost:5000/users").then((res) => {
+        setUserList(res.data);
+        setLoading(false);
+        let user;
+        const userFound = res.data.some((o) => { 
+            user=o
+          return email === o.email && password === o.senha;
+        });
+
+        if (userFound) {
+          console.log(props);
+          props.setIsLogged(true);
+          props.setLoggedId(user._id);
+          navigate("/");
+        } else {
+          alert("Usuário não cadastrado!");
+          setEmail(""); // Reset email field
+          setPassword(""); // Reset password field
         }
-        
-        
+      });
     }
-    return(  
-        <> 
-        <form onSubmit={handleSubmit}> 
-            <input type="email" ref={email} placeholder="Digite seu Email" ></input>
-            <input type="password" ref={password} placeholder="Digite sua Senha" name="password"></input>
-            <button type="submit">Login</button> 
-        </form>
-        </>
-    )
-}  
-export default LoginMiddle
+  }
+
+  return (
+    <>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Digite seu Email"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Digite sua Senha"
+        />
+        <button type="submit">
+          {loading ? "Loading..." : "Login"}
+        </button>
+      </form>
+    </>
+  );
+}
+
+export default LoginMiddle;
